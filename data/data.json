@@ -1,0 +1,44 @@
+{
+  "releases": [
+    {
+      "releaseDate": "19/09/2025",
+      "artistName": "Easymind",
+      "releaseName": "unknock",
+      "type": "Full-Length",
+      "genre": "Hip-Hop / Rap",
+      "duration": "45:12",
+      "listenLink": "https://soundcloud.com/...",
+      "buyLink": "https://bandcamp.com/..."
+    },
+    {
+      "releaseDate": "12/10/2025",
+      "artistName": "Neon Bloom",
+      "releaseName": "City Lights",
+      "type": "EP",
+      "genre": "Synthwave",
+      "duration": "18:34",
+      "listenLink": "https://soundcloud.com/...",
+      "buyLink": "https://bandcamp.com/..."
+    },
+    {
+      "releaseDate": "25/11/2025",
+      "artistName": "Tidal Waves",
+      "releaseName": "Deep Blue",
+      "type": "Single",
+      "genre": "Lo-fi Hip Hop",
+      "duration": "03:21",
+      "listenLink": "https://soundcloud.com/...",
+      "buyLink": ""
+    },
+    {
+      "releaseDate": "01/12/2025",
+      "artistName": "Various Artists",
+      "releaseName": "Winter Project",
+      "type": "Project",
+      "genre": "Compilation",
+      "duration": "55:01",
+      "listenLink": "https://soundcloud.com/...",
+      "buyLink": "https://bandcamp.com/..."
+    }
+  ]
+}
