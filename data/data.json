@@ -5,7 +5,7 @@
       "artistName": "Easymind",
       "releaseName": "unknock",
       "type": "Full-Length",
-      "genre": "Hip-Hop / Rap",
+      "genre": "Hip-Hop",
       "duration": "45:12",
       "listenLink": "https://soundcloud.com/...",
       "buyLink": "https://bandcamp.com/...",
@@ -29,6 +29,17 @@
       "type": "-",
       "genre": "-",
       "duration": "-",
+      "listenLink": "-",
+      "buyLink": "",
+      "moreLink": ""
+    },
+    {
+      "releaseDate": "12/12/2",
+      "artistName": "김수한무",
+      "releaseName": "진짜일껄라리뭇슨",
+      "type": "EP",
+      "genre": "Hip-Hop",
+      "duration": "12:12",
       "listenLink": "-",
       "buyLink": "",
       "moreLink": ""
