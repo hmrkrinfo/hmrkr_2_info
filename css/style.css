@@ -15,54 +15,68 @@ body {
 }
 
 main {
-  flex: 1; /* main 태그가 남은 모든 공간을 차지하도록 설정 */
+  flex: 1;
 }
 
 footer {
-  padding: 1.6rem 0; /* 푸터의 위아래로 20px의 안쪽 여백을 줍니다 */
-  margin-top: 1.6rem; /* 푸터 위에 20px의 바깥 여백을 줍니다 */
+  padding: 1.6rem 0;
+  margin-top: 1.6rem;
 }
 
 header {
   font-weight: bold;
   padding-bottom: 2rem;
-  text-decoration: underline;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: min(2rem) min(18.5rem) auto;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0 10px;
-  padding-bottom: 12px;
+.album-table {
+  border-collapse: collapse;
+  margin-bottom: 1.2rem;
+  table-layout: fixed;
 }
 
-.grid-item {
-  text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.album-table td {
+  text-align: left;
+  padding: 0; /* td의 안쪽 여백을 없애 간격을 제거합니다 */
+  margin: 0;
 }
 
-.grid-item img {
-  max-width: 100%;
+.cover-img {
+  width: 4rem;
   height: auto;
   display: block;
-  width: 4.2rem;
+  padding-right: 0.5rem;
 }
 
-.grid-item:nth-child(7) {
-  grid-column: 3 / 4;
-  grid-row: 1 / 4;
+.ol-img {
+  width: 0.9rem;
+  height: auto;
+  display: block;
 }
 
-/* 새로 추가하거나 수정된 코드 */
+.td-1 {
+  width: 5rem;
+}
+
+.td-2 {
+  width: 20rem;
+}
+
+.td-3 {
+  width: 4rem;
+}
+
+.td-4 {
+  width: 10px;
+  vertical-align: top;
+}
+
 .bold-text {
   font-weight: 500;
 }
 
+/* @media 쿼리는 가장 마지막에 위치해야 정상적으로 덮어쓰기가 됩니다. */
 @media (max-width: 480px) {
   :root {
-    font-size: 10px; /* 기본 폰트 크기를 10px로 변경 */
+    font-size: 10px;
   }
 }

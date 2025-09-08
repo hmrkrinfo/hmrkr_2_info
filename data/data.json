@@ -8,17 +8,25 @@
       "tracks": "13 Tracks",
       "genre": "Hip-Hop / Rap",
       "date": "09. 19. 2025",
-      "image": "assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg"
+      "image": "assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg",
+      "links": {
+        "listen": "https://soundcloud.com/easymind-unknock",
+        "buy": "https://bandcamp.com/easymind-unknock"
+      }
     },
     {
       "number": "02.",
-      "artist": "Hustle Muscle Records",
+      "artist": "Tigo",
       "title": "Unk",
       "format": "EP",
       "tracks": "5 Tracks",
-      "genre": "Hip-Hop / Alternative",
+      "genre": "Electronica / Alternative",
       "date": "09. 15. 2025",
-      "image": "https://placehold.co/400x400"
+      "image": "https://placehold.co/400x400",
+      "links": {
+        "listen": "https://soundcloud.com/hustlemuscle-unk",
+        "buy": "https://bandcamp.com/hustlemuscle-unk"
+      }
     }
   ]
 }
