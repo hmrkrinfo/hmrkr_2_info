@@ -19,19 +19,19 @@ main {
 }
 
 footer {
-  padding: 20px 0; /* 푸터의 위아래로 20px의 안쪽 여백을 줍니다 */
-  margin-top: 20px; /* 푸터 위에 20px의 바깥 여백을 줍니다 */
+  padding: 1.6rem 0; /* 푸터의 위아래로 20px의 안쪽 여백을 줍니다 */
+  margin-top: 1.6rem; /* 푸터 위에 20px의 바깥 여백을 줍니다 */
 }
 
 header {
   font-weight: bold;
-  padding-bottom: 24px;
+  padding-bottom: 2rem;
   text-decoration: underline;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: min(20px) min(220px) auto;
+  grid-template-columns: min(2rem) min(18.5rem) auto;
   grid-template-rows: repeat(3, 1fr);
   gap: 0 10px;
   padding-bottom: 12px;
@@ -48,7 +48,7 @@ header {
   max-width: 100%;
   height: auto;
   display: block;
-  width: 50px;
+  width: 4.2rem;
 }
 
 .grid-item:nth-child(7) {
@@ -59,4 +59,10 @@ header {
 /* 새로 추가하거나 수정된 코드 */
 .bold-text {
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 10px; /* 기본 폰트 크기를 10px로 변경 */
+  }
 }
