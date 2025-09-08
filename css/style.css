@@ -8,6 +8,21 @@ p {
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* main 태그가 남은 모든 공간을 차지하도록 설정 */
+}
+
+footer {
+  padding: 20px 0; /* 푸터의 위아래로 20px의 안쪽 여백을 줍니다 */
+  margin-top: 20px; /* 푸터 위에 20px의 바깥 여백을 줍니다 */
+}
+
 header {
   font-weight: bold;
   padding-bottom: 24px;
