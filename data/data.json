@@ -1,48 +1,24 @@
 {
-  "releases": [
+  "albums": [
     {
-      "releaseDate": "19/09/25",
-      "artistName": "Easymind",
-      "releaseName": "unknock",
-      "type": "Full-Length",
-      "genre": "Hip-Hop",
-      "duration": "45:12",
-      "listenLink": "https://soundcloud.com/...",
-      "buyLink": "https://bandcamp.com/...",
-      "moreLink": "-"
+      "number": "01.",
+      "artist": "Easymind",
+      "title": "unknock",
+      "format": "LP",
+      "tracks": "13 Tracks",
+      "genre": "Hip-Hop / Rap",
+      "date": "09. 19. 2025",
+      "image": "assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg"
     },
     {
-      "releaseDate": "--/--/25",
-      "artistName": "Tigo",
-      "releaseName": "-",
-      "type": "Full-Length",
-      "genre": "-",
-      "duration": "-",
-      "listenLink": "",
-      "buyLink": "-",
-      "moreLink": ""
-    },
-    {
-      "releaseDate": "-/-/-",
-      "artistName": "Y2mate",
-      "releaseName": "-",
-      "type": "-",
-      "genre": "-",
-      "duration": "-",
-      "listenLink": "-",
-      "buyLink": "",
-      "moreLink": ""
-    },
-    {
-      "releaseDate": "12/12/2",
-      "artistName": "김수한무",
-      "releaseName": "진짜일껄라리뭇슨",
-      "type": "EP",
-      "genre": "Hip-Hop",
-      "duration": "12:12",
-      "listenLink": "-",
-      "buyLink": "",
-      "moreLink": ""
+      "number": "02.",
+      "artist": "Hustle Muscle Records",
+      "title": "Unk",
+      "format": "EP",
+      "tracks": "5 Tracks",
+      "genre": "Hip-Hop / Alternative",
+      "date": "09. 15. 2025",
+      "image": "https://placehold.co/400x400"
     }
   ]
 }
