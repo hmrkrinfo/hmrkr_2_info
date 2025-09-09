@@ -12,6 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 main {
@@ -25,9 +27,13 @@ footer {
 
 header {
   font-weight: bold;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
+.release-warpper {
+  padding-bottom: 5rem;
+}
 .album-table {
   border-collapse: collapse;
   margin-bottom: 1.2rem;
@@ -36,8 +42,7 @@ header {
 
 .album-table td {
   text-align: left;
-  padding: 0; /* td의 안쪽 여백을 없애 간격을 제거합니다 */
-  margin: 0;
+  padding: 0;
 }
 
 .cover-img {
@@ -48,7 +53,7 @@ header {
 }
 
 .ol-img {
-  width: 0.9rem;
+  width: 0.8rem;
   height: auto;
   display: block;
 }
