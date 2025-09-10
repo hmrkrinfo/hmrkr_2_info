@@ -4,8 +4,14 @@
 
 p {
   color: #333;
-  line-height: 1;
+  line-height: 1rem;
   margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
 }
 
 body {
@@ -28,64 +34,46 @@ footer {
 header {
   font-weight: bold;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
-.release-warpper {
-  padding-bottom: 5rem;
-}
-.album-table {
+table {
   border-collapse: collapse;
-  margin-bottom: 1.2rem;
-  table-layout: fixed;
 }
 
-.album-table td {
+table.album_card {
+  margin-bottom: 2rem;
+}
+
+td {
+  padding: 0;
   text-align: left;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+
+td.td_pr2 {
+  padding-right: 3rem;
+}
+
+tr {
   padding: 0;
 }
 
-.cover-img {
-  width: 4rem;
-  height: auto;
-  display: block;
-  padding-right: 0.5rem;
+.td_cover {
+  max-height: 3.625rem;
 }
 
-.ol-img {
-  width: 0.8rem;
-  height: auto;
-  display: block;
+.td_more_icon {
+  max-height: 1rem;
+  padding-top: 0.1rem;
 }
 
-.td-1 {
-  width: 5rem;
-}
-
-.td-2 {
-  width: 20rem;
-}
-
-.td-3 {
-  width: 4rem;
-}
-
-.td-4 {
-  width: 10px;
-  vertical-align: top;
-}
-
-.bold-text {
-  font-weight: 500;
-}
-
-/* @media 쿼리는 가장 마지막에 위치해야 정상적으로 덮어쓰기가 됩니다. */
 @media (max-width: 480px) {
   :root {
     font-size: 10px;
   }
 }
-
 
 .info_div_1 {
   padding-bottom: 1rem;
@@ -99,12 +87,10 @@ header {
   padding-bottom: 1rem;
 }
 
-
 .info_div_3 {
   padding-bottom: 1rem;
 }
 
 .info_div_4 {
   padding-bottom: 1rem;
-
 }
