@@ -1,12 +1,6 @@
 :root {
   font-size: 12px;
-}
-
-p {
-  color: #333;
   line-height: 1rem;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -39,6 +33,7 @@ header {
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 table.album_card {
@@ -46,10 +41,9 @@ table.album_card {
 }
 
 td {
-  padding: 0;
+  padding: 0 1rem 0 0;
   text-align: left;
   vertical-align: top;
-  padding-right: 1rem;
 }
 
 td.td_pr2 {
@@ -61,12 +55,11 @@ tr {
 }
 
 .td_cover {
-  max-height: 3.625rem;
+  max-height: 3rem;
 }
 
 .td_more_icon {
   max-height: 1rem;
-  padding-top: 0.1rem;
 }
 
 @media (max-width: 480px) {
