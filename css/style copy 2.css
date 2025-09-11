@@ -40,7 +40,7 @@ td {
   padding: 0;
   text-align: left;
   vertical-align: top;
-  padding-right: 2rem;
+  padding-right: 1rem;
   overflow: hidden; /* 텍스트가 셀을 벗어나는 것을 숨김 */
   line-height: 1rem; /* 셀 높이를 1rem로 고정 */
   height: 1rem;
