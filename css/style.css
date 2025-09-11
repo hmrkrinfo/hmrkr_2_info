@@ -2,18 +2,12 @@
   font-size: 12px;
 }
 
-p {
-  color: #333;
-  line-height: 1;
-  margin: 0;
-}
-
 body {
+  color: #333;
+  padding: 2rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  min-height: calc(100vh - 1.6rem);
 }
 
 main {
@@ -26,85 +20,114 @@ footer {
 }
 
 header {
-  font-weight: bold;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 0 0 4rem 0;
 }
 
-.release-warpper {
-  padding-bottom: 5rem;
+header a {
+  color: blue;
 }
-.album-table {
+
+header a:visited {
+  color: blue;
+}
+
+table {
   border-collapse: collapse;
-  margin-bottom: 1.2rem;
-  table-layout: fixed;
 }
 
-.album-table td {
-  text-align: left;
+dl {
+  margin: 0;
+  line-height: 1rem;
+}
+
+td,
+th {
   padding: 0;
+  text-align: left;
+  vertical-align: top;
+  padding-right: 1rem;
+  overflow: hidden;
+  line-height: 1rem;
+  height: 1rem;
 }
 
-.cover-img {
-  width: 4rem;
-  height: auto;
-  display: block;
-  padding-right: 0.5rem;
+td a {
+  text-decoration: none;
 }
 
-.ol-img {
-  width: 0.8rem;
-  height: auto;
-  display: block;
+td a:hover {
+  color: blue;
 }
 
-.td-1 {
-  width: 5rem;
+td a:visited {
+  color: blue;
 }
 
-.td-2 {
-  width: 20rem;
-}
-
-.td-3 {
-  width: 4rem;
-}
-
-.td-4 {
-  width: 10px;
+/* 이미지 셀: rowspan이 적용된 셀 */
+.td-img-wrapper {
+  padding: 0;
   vertical-align: top;
 }
 
-.bold-text {
-  font-weight: 500;
+/* 3번 이미지: 세로로 3개의 행에 맞춰 스케일 조정 */
+.td-img-wrapper .fit-3rem {
+  max-height: 3rem;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0 1rem 0 0;
 }
 
-/* @media 쿼리는 가장 마지막에 위치해야 정상적으로 덮어쓰기가 됩니다. */
+/* 4번 이미지: 1rem을 기준으로 상단 고정 */
+.td-img-wrapper .fixed-top {
+  height: 1rem;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+}
+
 @media (max-width: 480px) {
   :root {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
-
-.info_div_1 {
+.release-info-header {
   padding-bottom: 1rem;
 }
 
-.info_div_2 {
+/* 이미지 셀: rowspan이 적용된 셀 */
+.release-info-cover {
+  padding: 0;
+  vertical-align: top;
+}
+
+/* 3번 이미지: 세로로 3개의 행에 맞춰 스케일 조정 */
+.release-info-cover .fit-release-info {
+  max-height: 13rem;
+  width: auto; /* 비율 유지를 위해 너비 자동 설정 */
+  display: block;
+  margin: 0;
+  padding: 0 1rem 0 0;
+}
+
+.pdb-1 {
   padding-bottom: 1rem;
 }
 
-.info_div_2_2 {
-  padding-bottom: 1rem;
+.pdb-2 {
+  padding-bottom: 2rem;
 }
 
-
-.info_div_3 {
-  padding-bottom: 1rem;
+.pdb-3 {
+  padding-bottom: 3rem;
 }
 
-.info_div_4 {
-  padding-bottom: 1rem;
+.pdb-4 {
+  padding-bottom: 4rem;
+}
 
+.release-credit a {
+  color: blue;
 }
