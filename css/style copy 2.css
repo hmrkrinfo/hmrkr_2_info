@@ -97,10 +97,20 @@ td:not(.td-img-wrapper) {
   padding-bottom: 1rem;
 }
 
-.release-info-cover img {
-  max-width: 110px;
+/* 이미지 셀: rowspan이 적용된 셀 */
+.release-info-cover {
+  padding: 0;
+  vertical-align: top;
 }
 
+/* 3번 이미지: 세로로 3개의 행에 맞춰 스케일 조정 */
+.release-info-cover .fit-release-info {
+  max-height: calc(12 * 1rem); /* 1rem * 3 = 36px */
+  width: auto; /* 비율 유지를 위해 너비 자동 설정 */
+  display: block;
+  margin: 0;
+  padding: 0 1rem 0 0;
+}
 
 .info-div-2 {
   padding-bottom: 1rem;
@@ -121,4 +131,3 @@ td:not(.td-img-wrapper) {
 .release-credit a {
   color: #333;
 }
-
