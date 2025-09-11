@@ -1,89 +1,114 @@
+/* system */
 :root {
   font-size: 12px;
+  line-height: 1rem;
 }
 
+/* body */
 body {
   color: #333;
-  padding: 2rem 1rem 0 1rem;
+  padding-top: 3rem;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 1.6rem);
+  min-height: calc(100vh - 4.6rem);
 }
 
+/* main */
 main {
   flex: 1;
 }
 
+/* footer */
 footer {
   padding: 1.6rem 0;
   margin-top: 1.6rem;
 }
 
-header {
-  padding: 0 0 4rem 0;
+/* header */
+.header_section {
 }
 
-header a {
-  color: blue;
+/* release_section */
+.release_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem 2rem;
 }
 
-header a:visited {
-  color: blue;
-}
+/* table_release_section */
 
 table {
   border-collapse: collapse;
 }
 
-dl {
-  margin: 0;
-  line-height: 1rem;
-}
-
-td,
-th {
-  padding: 0;
-  text-align: left;
-  vertical-align: top;
-  padding-right: 1rem;
-  overflow: hidden;
+.release_section--table td,
+tr {
   line-height: 1rem;
   height: 1rem;
+  padding: 0 1rem 0 0;
+  overflow: hidden;
 }
 
-td a {
+.td_img_release {
+  height: 3rem;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.td_numb {
+  font-style: italic;
+}
+
+.release_section--table .table_f_td {
+  background-color: rgb(217, 255, 47);
+}
+
+.release_card {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+header a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 }
 
-td a:hover {
-  color: blue;
+table a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
 
-td a:visited {
-  color: blue;
+.font-500 {
+  font-weight: 900;
 }
 
-/* 이미지 셀: rowspan이 적용된 셀 */
-.td-img-wrapper {
-  padding: 0;
+a:hover,
+:visited {
+  color: #333;
+}
+
+.top-fix {
   vertical-align: top;
 }
 
-/* 3번 이미지: 세로로 3개의 행에 맞춰 스케일 조정 */
-.td-img-wrapper .fit-3rem {
+.--table_img_3rem {
   max-height: 3rem;
   width: auto;
   display: block;
   margin: 0;
-  padding: 0 1rem 0 0;
 }
 
-/* 4번 이미지: 1rem을 기준으로 상단 고정 */
-.td-img-wrapper .fixed-top {
-  height: 1rem;
+.--table_img_1rem {
+  max-height: 1rem;
   width: auto;
   display: block;
-  object-fit: contain;
   margin: 0;
 }
 
@@ -93,24 +118,7 @@ td a:visited {
   }
 }
 
-.release-info-header {
-  padding-bottom: 1rem;
-}
-
-/* 이미지 셀: rowspan이 적용된 셀 */
-.release-info-cover {
-  padding: 0;
-  vertical-align: top;
-}
-
-/* 3번 이미지: 세로로 3개의 행에 맞춰 스케일 조정 */
-.release-info-cover .fit-release-info {
-  max-height: 13rem;
-  width: auto; /* 비율 유지를 위해 너비 자동 설정 */
-  display: block;
-  margin: 0;
-  padding: 0 1rem 0 0;
-}
+/*bottom*/
 
 .pdb-1 {
   padding-bottom: 1rem;
@@ -128,6 +136,20 @@ td a:visited {
   padding-bottom: 4rem;
 }
 
-.release-credit a {
-  color: blue;
+/*right*/
+
+.pdr-1 {
+  padding-right: 1rem;
+}
+
+.pdr-2 {
+  padding-right: 2rem;
+}
+
+.pdr-3 {
+  padding-right: 3rem;
+}
+
+.pdr-4 {
+  padding-right: 4rem;
 }
