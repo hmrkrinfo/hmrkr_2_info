@@ -112,22 +112,39 @@ td:not(.td-img-wrapper) {
   padding: 0 1rem 0 0;
 }
 
-.info-div-2 {
+.pdb-1 {
   padding-bottom: 1rem;
 }
 
-.info-div-2-2 {
-  padding-bottom: 4rem;
+.pdb-2 {
+  padding-bottom: 2rem;
 }
 
-.info-div-3 {
-  padding-bottom: 4rem;
+.pdb-3 {
+  padding-bottom: 3rem;
 }
 
-.release-credit {
-  padding-bottom: 1rem;
+.pdb-4 {
+  padding-bottom: 4rem;
 }
 
 .release-credit a {
   color: #333;
+}
+
+.release-container {
+  display: flex;
+  flex-wrap: wrap; /* 자식 요소가 부모 컨테이너를 벗어날 경우 줄 바꿈 */
+  align-items: flex-start; /* 세로 정렬: 위쪽에서 시작 */
+}
+
+.release-col-1 {
+  padding: 0 4rem 0 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.release-col-2 {
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
