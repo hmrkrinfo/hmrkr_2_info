@@ -4,6 +4,16 @@
   line-height: 1rem;
 }
 
+h2 {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.p-i {
+  font-style: italic;
+}
+
 /* flex */
 
 .flex-row {
@@ -85,14 +95,21 @@ tr {
   border-spacing: 0;
 }
 
-.release_list_section {
+.release_list_wrapper {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
-.artist_list_section {
+.artist_list_wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.artist_info_wrapper {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
