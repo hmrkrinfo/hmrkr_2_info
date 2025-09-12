@@ -21,6 +21,11 @@ h2 {
   flex-direction: row;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
 .row-gap {
   gap: 1rem;
 }
@@ -113,7 +118,7 @@ tr {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 /* footer */
