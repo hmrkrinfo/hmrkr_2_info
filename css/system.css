@@ -19,6 +19,10 @@ main {
   flex: 1;
 }
 
+footer {
+  padding-bottom: 2rem;
+}
+
 .pdb-1 {
   padding-bottom: 1rem;
 }
@@ -63,6 +67,10 @@ h3 {
   max-height: 3rem;
 }
 
+.img-cover-12rem {
+  max-height: 10rem;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -85,8 +93,12 @@ h3 {
   gap: 0 3rem;
 }
 
+.gap-row-4 {
+  gap: 0 4rem;
+}
+
 .gap-col-1 {
-  gap: 1rem;
+  gap: 1rem 0;
 }
 
 .gap-col-2 {
@@ -113,12 +125,46 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
+.gap-2-2 {
+  gap: 2rem 2rem;
+}
+
+.gap-2-3 {
+  gap: 2rem 3rem;
+}
+
 .flex-wrap-shrink0 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 2rem;
 }
 
 .flex-shrink0 {
   flex-shrink: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr {
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.flex-table-shrink0 {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.artist-release-list td {
+  padding-right: 1rem;
+}
+
+.td-w-re {
+  width: 15rem;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
