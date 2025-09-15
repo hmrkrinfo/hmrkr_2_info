@@ -1,0 +1,22 @@
+[
+  {
+    "numb": "1.",
+    "artist": "Easymind",
+    "album": "unknock",
+    "format": "LP",
+    "tracks": "13",
+    "genre": "Hip-Hop / Rap",
+    "date": "09. 19. 2025",
+    "image": "/assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg"
+  },
+  {
+    "numb": "2.",
+    "artist": "ArtistName",
+    "album": "AlbumName",
+    "format": "EP",
+    "tracks": "5",
+    "genre": "Electronic",
+    "date": "08. 15. 2025",
+    "image": "/assets/images/albums/another_album/cover.jpg"
+  }
+]

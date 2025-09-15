@@ -1,52 +1,43 @@
-// 현재 페이지의 URL 경로를 가져옵니다.
-const currentPagePath = window.location.pathname;
-
-// 경로가 '/index.html'이거나 '/' (루트)일 때만 코드 실행
-if (currentPagePath === '/' || currentPagePath.includes('/index.html')) {
-  fetch("../data/data.json")
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Fetch the JSON data
+  fetch("/data/data.json")
     .then((response) => {
+      // Check if the response is ok
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
       return response.json();
     })
     .then((data) => {
-      const mainSection = document.querySelector("main section");
-      mainSection.innerHTML = "";
+      // 2. Select the parent container where the albums will be displayed
+      const container = document.querySelector(".flex-row.gap-row-2");
+      container.innerHTML = ""; // Clear existing content to prevent duplicates
 
-      data.albums.forEach((album) => {
-        const albumTableHTML = `
-          <table class="album-table">
-            <tbody>
-              <tr>
-                <td class="td-1">
-                  <p><span class="bold-text"><i>${album.number}</i></span></p>
-                </td>
-                <td class="td-2"><span class="bold-text">${album.artist}</span> - ${album.title}</td>
-                <td rowspan="3" class="td-3" >
-                  <a href="${album.links.buy}">
-                    <img class="cover-img" src="${album.image}" alt="${album.title}">
-                  </a>
-                </td>
-                <td rowspan="3" class="td-4">
-                  <a href="${album.links.more}"><img class="ol-img" src="assets/images/arrow-trend-up-svgrepo-com.svg"></a>
-                </td>
-              </tr>
-              <tr>
-                <td><a href="${album.links.listen}">listen</a></td>
-                <td>${album.format} | ${album.tracks} | ${album.genre}</td>
-              </tr>
-              <tr>
-                <td><a href="${album.links.buy}">buy</a></td>
-                <td>${album.date}</td>
-              </tr>
-            </tbody>
-          </table>
+      // 3. Loop through each item in the JSON data array
+      data.forEach((album) => {
+        // 4. Create the HTML elements dynamically
+        const albumDiv = document.createElement("div");
+        albumDiv.classList.add("flex-row", "gap-row-1");
+
+        albumDiv.innerHTML = `
+          <div>
+            <img src="${album.image}" class="img-cover-3rem">
+          </div>
+          <div class="flex-col">
+            <div>${album.artist} - ${album.album}</div>
+            <div>${album.format} | ${album.genre}</div>
+            <div>${album.date}</div>
+          </div>
+          <div class="font-500">
+            <a href="#">&rarr;</a>
+          </div>
         `;
-        mainSection.innerHTML += albumTableHTML;
+
+        // 5. Append the newly created elements to the container
+        container.appendChild(albumDiv);
       });
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
-}
+});

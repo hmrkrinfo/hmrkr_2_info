@@ -5,87 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>페이지 제목</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/system.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=Libertinus+Serif+Display&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-
-    <header>
-        <section class="header_section pdb-4">
-            <a href="index.html">
-                hustle muscle records
-            </a>
-        </section>
+    <header class="pdb-4">
+        <h1>hustle muscle records</h1>
     </header>
 
     <main>
-        <section class="release_list_section">
-            <h2>release list</h2>
-            <div class="release_list_wrapper pdb-20">
-                <div class="flex-row row-gap ds">
-                    <div class="a_wrapper_album">1.<br><a href="" class="a_link a_div">buy</a><br><a href=""
-                            class="a_link a_div">listen</a>
-                    </div>
-                    <div class="a_wrapper_album"><a href="releases/unknock.html" class="flex-row row-gap a_div">
-                            <div><img src="assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg"
-                                    class="img_3rem"></div>
-                            <div>Easymind - unknock<br>LP | Hip-Hop / Rap<br>25. 09-19</div>
-                            <div class="font-500">&#8594;</div>
-                        </a>
-                    </div>
+        <section class="release-card-section pdb-20">
+            <div class="flex-col gap-col-1">
+                <div>
+                    <h2 class="font-italic op-05">release list</h2>
                 </div>
-                <div class="flex-row row-gap ds op-05">
-                    <div class="a_wrapper_album">2.<br><a href="" class="a_link a_div"></a><br><a href=""
-                            class="a_link a_div"></a>
-                    </div>
-                    <div class="a_wrapper_album"><a href="releases/unknock.html" class="flex-row row-gap a_div">
-                            <div>Tigo<br>LP<br></div>
-                            <div class="font-500">&#8594;</div>
+                <div class="flex-row gap-row-3 flex-wrap-shrink0">
+
+                    <div class="flex-row gap-row-2 flex-shrink0">
+                        <div>
+                            <div class="font-italic">1.</div>
+                            <div><a href="" class="a-hover-green">buy</a></div>
+                            <div><a href="" class="a-hover-green">listen</a></div>
+                        </div>
+                        <a href="" class="a-hover-green">
+                            <div class="flex-row gap-row-1">
+                                <div>
+                                    <img src="/assets/images/albums/unknock/(cover_1080px) Easymind - unknock.jpg"
+                                        class="img-cover-3rem">
+                                </div>
+                                <div class="flex-col">
+                                    <div>Easymind</div>
+                                    <div>LP | Hip-Hop / Rap</div>
+                                    <div>25. 09-19</div>
+                                </div>
+                                <div class="font-500">
+                                    &#8594;
+                                </div>
+                            </div>
                         </a>
                     </div>
-                </div>
-                <div class="flex-row row-gap ds op-05">
-                    <div class="a_wrapper_album">3.<br><a href="" class="a_link a_div"></a><br><a href=""
-                            class="a_link a_div"></a>
-                    </div>
-                    <div class="a_wrapper_album"><a href="releases/unknock.html" class="flex-row row-gap a_div">
-                            <div>Y2mate<br><br>26. 09-03</div>
-                            <div class="font-500">&#8594;</div>
+
+                    <div class="flex-row gap-row-2 flex-shrink0 op-05">
+                        <a href="" class="a-hover-green">
+                            <div class="flex-row gap-row-1">
+                                <div class="flex-col">
+                                    <div>Tigo</div>
+                                    <div>S/s</div>
+                                    <div></div>
+                                </div>
+                                <div class="font-500">
+                                    &#8594;
+                                </div>
+                            </div>
                         </a>
                     </div>
+
+                    <div class="flex-row gap-row-2 flex-shrink0 op-05">
+                        <a href="" class="a-hover-green">
+                            <div class="flex-row gap-row-1">
+                                <div class="flex-col">
+                                    <div>Y2mate</div>
+                                    <div>LP</div>
+                                    <div>26. 09-03</div>
+                                </div>
+                                <div class="font-500">
+                                    &#8594;
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="artist_list_section">
-            <h2>artist list</h2>
-            <div class="artist_list_wrapper">
-                <div class="flex-row row-gap">
-                    <div class="a_wrapper_artist">
-                        <a href="artists/Easymind.html" class="a_div">Easymind</a>
-                    </div>
-                    <div class="a_wrapper_artist">
-                        <a href="artists/Easymind.html" class="a_div op-05">Tigo</a>
-                    </div>
-                    <div class="a_wrapper_artist">
-                        <a href="artists/Easymind.html" class="a_div op-05">Y2mate</a>
-                    </div>
+        <section>
+            <div class="flex-col gap-col-1">
+                <div>
+                    <h2 class="font-italic op-05">release list</h2>
+                </div>
+                <div class="flex-row gap-col-1">
+                    <div><a href="" class="a-hover-green">Easymind</a></div>
+                    <div class="op-05"><a href="">Tigo</a></div>
+                    <div class="op-05"><a href="">Y2mate</a></div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <table>
-            <tr>
-                <td>platform.admin@hmrkr.info</td>
-            </tr>
-            <tr>
-                <td>from south korea</td>
-            </tr>
-        </table>
+        <div>platform.admin@hmrkr.info</div>
+        <div>from south korea</div>
     </footer>
+
 </body>
 
 </html>
