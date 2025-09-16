@@ -18,6 +18,7 @@ main {
 }
 
 footer {
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -69,6 +70,10 @@ h3 {
 
 .img-cover-12rem {
   max-height: 10rem;
+}
+
+.img-max-480 {
+  max-width: 480px;
 }
 
 .flex-row {
