@@ -72,8 +72,16 @@ h3 {
   max-height: 10rem;
 }
 
-.img-max-480 {
-  max-width: 480px;
+.img-max-5 {
+  max-width: 5rem;
+}
+
+.img-max-3 {
+  max-width: 3rem;
+}
+
+.img-max-2 {
+  max-width: 2rem;
 }
 
 .div-max-480 {
@@ -203,11 +211,6 @@ tr {
     max-width: none;
   }
 
-  .div-max-480 {
-    width: 100%;
-    max-width: none;/
-  }
-
   [data-lang="kr"] {
     font-size: 9.5px;
   }
@@ -227,3 +230,5 @@ tr {
 .lang-option.active {
   color: #000;
 }
+
+/**/
