@@ -185,6 +185,10 @@ tr {
   justify-content: flex-end;
 }
 
+[data-lang="kr"] {
+  font-size: 11px;
+}
+
 @media (max-width: 480px) {
   :root {
     font-size: 10px;
@@ -203,6 +207,10 @@ tr {
     width: 100%;
     max-width: none;/
   }
+
+  [data-lang="kr"] {
+    font-size: 9.5px;
+  }
 }
 
 .hidden {
@@ -218,8 +226,4 @@ tr {
 
 .lang-option.active {
   color: #000;
-}
-
-[data-lang="kr"] {
-  font-size: 11px;
 }
