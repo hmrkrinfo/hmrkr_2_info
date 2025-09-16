@@ -5,9 +5,7 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
-
   padding: 4rem 2rem 0 2rem;
   line-height: 1rem;
   display: flex;
@@ -43,6 +41,11 @@ footer {
   padding-bottom: 10rem;
 }
 
+.pdb-15 {
+  padding-bottom: 15rem;
+}
+
+
 .pdb-20 {
   padding-bottom: 20rem;
 }
@@ -59,9 +62,6 @@ h3 {
 }
 
 /* flex */
-
-.div-flex-wrapper {
-}
 
 .img-cover-3rem {
   max-height: 3rem;
@@ -120,6 +120,7 @@ a {
 .a-hover-green {
   color: black;
 }
+
 .a-hover-green:hover {
   color: rgb(97, 148, 22);
   transition: all 0.1s ease-in-out;
