@@ -204,3 +204,22 @@ tr {
     max-width: none;/
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.lang-option {
+  cursor: pointer;
+  font-weight: normal;
+  color: #888;
+  transition: color 0.1s ease;
+}
+
+.lang-option.active {
+  color: #000;
+}
+
+[data-lang="kr"] {
+  font-size: 11px;
+}
