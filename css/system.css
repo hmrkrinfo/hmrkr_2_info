@@ -174,4 +174,8 @@ tr {
   :root {
     font-size: 10px;
   }
+
+  body {
+    padding: 2rem 1rem 0 1rem;
+  }
 }
