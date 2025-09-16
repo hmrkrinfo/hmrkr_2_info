@@ -81,6 +81,11 @@ h3 {
   flex-direction: column;
 }
 
+.gap-row-05 {
+  gap: 0 0.5rem;
+}
+
+
 .gap-row-1 {
   gap: 0 1rem;
 }
