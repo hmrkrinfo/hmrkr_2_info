@@ -188,4 +188,10 @@ tr {
   body {
     padding: 2rem 1rem 0 1rem;
   }
+
+  .img-max-480 {
+    width: 100%;
+    max-width: none;
+    /* 모바일에서는 최대 폭 제한을 해제 */
+  }
 }
