@@ -169,3 +169,9 @@ tr {
 .flex-end {
   justify-content: flex-end;
 }
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 10px;
+  }
+}
