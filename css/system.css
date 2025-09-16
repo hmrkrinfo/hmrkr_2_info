@@ -18,7 +18,7 @@ main {
 }
 
 footer {
-  padding-top: 4rem;
+  padding-top: 12rem;
   padding-bottom: 2rem;
 }
 
@@ -75,6 +75,11 @@ h3 {
 .img-max-480 {
   max-width: 480px;
 }
+
+.div-max-480 {
+  max-width: 480px;
+}
+
 
 .flex-row {
   display: flex;
@@ -192,6 +197,10 @@ tr {
   .img-max-480 {
     width: 100%;
     max-width: none;
-    /* 모바일에서는 최대 폭 제한을 해제 */
+  }
+
+  .div-max-480 {
+    width: 100%;
+    max-width: none;/
   }
 }
